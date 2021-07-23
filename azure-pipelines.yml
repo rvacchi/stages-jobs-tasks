@@ -2,8 +2,7 @@ trigger:
 - main
 
 pool:
-  name: 'Default'
-  vmImage: 'agentvm'
+  vmImage: 'windows-latest'
 
 stages:
 - stage: BuildApp
