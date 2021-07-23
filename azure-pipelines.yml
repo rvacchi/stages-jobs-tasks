@@ -56,10 +56,10 @@ stages:
       vmImage: 'vs2017-win2016'
     steps:
     - script: echo deploying backend app to PROD
-      displayName: deploy backend app to PROD
-    - task: AzureCLI@2
-      inputs:
-        azureSubscription: 'AzureDevOps-SPN-Demo'
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: 'az group list -o table'
+    #   displayName: deploy backend app to PROD
+    # - task: AzureCLI@2
+    #   inputs:
+    #     azureSubscription: 'AzureDevOps-SPN-Demo'
+    #     scriptType: 'bash'
+    #     scriptLocation: 'inlineScript'
+    #     inlineScript: 'az group list -o table'
